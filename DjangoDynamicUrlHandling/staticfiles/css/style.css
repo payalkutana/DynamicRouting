@@ -1,0 +1,25 @@
+  /* Container styling */
+  .region-selectbox {
+      width: 200px;                /* Width of the dropdown */
+      padding: 10px;               /* Inner spacing for the dropdown */
+      font-size: 16px;             /* Font size for the dropdown text */
+      border: 2px solid #ccc;      /* Border color */
+      border-radius: 5px;          /* Rounded corners */
+      background-color: #f9f9f9;   /* Background color */
+      color: #333;                 /* Text color */
+      cursor: pointer;             /* Pointer cursor on hover */
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover state */
+  .region-selectbox:hover {
+      border-color: #007bff;       /* Border color on hover */
+      box-shadow: 0 0 5px #007bff; /* Add shadow effect on hover */
+  }
+
+  /* Focus state */
+  .region-selectbox:focus {
+      outline: none;               /* Remove default outline */
+      border-color: #007bff;       /* Highlight border */
+      box-shadow: 0 0 8px #007bff; /* Add a stronger shadow on focus */
+  }

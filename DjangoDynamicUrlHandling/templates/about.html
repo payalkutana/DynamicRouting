@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script>
+        function redirectToPage(selectElement) {
+            const url = selectElement.value + '/about';
+            if (url) {
+                window.location.replace(url); // Redirects the user
+            }
+        }
+    </script>
+    <title>About</title>
+</head>
+<body>
+    <select name="region" class="region-selectbox" onchange="redirectToPage(this)">
+        <option value="">-- Choose Region --</option>
+        <option value="/in">India</option>
+        <option value="/us">United States</option>
+        <option value="/uk">United Kingdom</option>
+    </select>
+    <h1>About Us -  {{region_name}}</h1>
+</body>
+</html>
